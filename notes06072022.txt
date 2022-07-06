@@ -329,9 +329,237 @@ class Demo {
 class Demo {
 	public static void main(String[] args) {
 		int quantity;  //declaration
-                quantity=1;   // intialisation
+                quantity=1;   // initialisation
 		float totalCost = 10 * quantity; 
 		System.out.println(totalCost);
 	}
 }
 ---------------------------------------------------------------------------------------------------------
+
+public class VariableDemo3 {
+
+	public static void main(String[] args) {
+       int roll=1;
+       String name="Akash";
+       boolean isGraduate=false;
+       boolean isMarried=false;
+       if(isGraduate==true)
+       {
+    	   System.out.println("Akash is a graduate");
+    	   
+       }
+       else
+       {
+    	   System.out.println("Akash is under graduate");
+       }
+
+	}
+
+}
+----------------------------------------------------------------------------------------------
+
+Operators 
+
+1) Arithmetic operators
+2) logical operators
+3) relation operators
+4) assignment operators
+5) bitwise operators
+
+
+
+public class UnaryDemo1 {
+
+	public static void main(String[] args) {
+		int num=10;
+		System.out.println(num);  //10
+		num++; // num=num+1; // post increment
+		System.out.println(num); //11
+
+	}
+
+}
+--------------------------------------------
+
+
+public class UnaryDemo2 {
+
+	public static void main(String[] args) {
+		int num=10;
+		System.out.println(num);  //10
+		++num; // num=num+1;   // pre increment
+		System.out.println(num); //11
+
+	}
+
+}
+
+--------------------------------
+public class UnaryDemo3 {
+
+	public static void main(String[] args) {
+		int num=10;
+		int result;
+		System.out.println(num); //10
+		result=num++; // result=num;
+		              // num=num+1
+		System.out.println(result); //10
+		System.out.println(num);    //11
+	}
+
+}
+-----------------------------------------------------------------------------------------
+
+public class UnaryDemo4 {
+
+	public static void main(String[] args) {
+		int num=10;
+		int result;
+		System.out.println(num); //10
+		result=++num; 
+		              // num=num+1
+		              // result=num
+		System.out.println(result); //11
+		System.out.println(num);    //11
+	}
+
+}
+------------------------------------------------------------------------------
+public class VariableDemo5 {
+
+	public static void main(String[] args) {
+		boolean b=true;
+		System.out.println(b); //true
+		System.out.println(!b); // false
+		b=false;
+		System.out.println(b);  //false
+		System.out.println(!b);  // true
+				
+	}
+
+}
+-------------------------
+public class ArithDemo1 {
+
+	public static void main(String[] args) {
+		int num1=20;
+		int num2=10;
+		int result=0;
+		
+		System.out.println("Add");
+		result=num1+num2;
+		System.out.println(result);
+		System.out.println("Subtract");
+		result=num1-num2;
+		System.out.println(result);
+		System.out.println("Multiply");
+		result=num1*num2;
+		System.out.println(result);
+		System.out.println("Divide");
+		result=num1/num2;
+		System.out.println(result);
+		result=num1%num2;
+		System.out.println(result);
+
+	}
+
+}
+-------------------------------------------------------
+public class Relational {
+
+	public static void main(String[] args) {
+	int num1=10;
+	int num2=20;
+	int num3=20;
+	
+	System.out.println(num1==num2); // false
+	System.out.println(num1<num2); // true
+	System.out.println(num1>num2);  // false
+	System.out.println(num2==num3); // true
+	System.out.println(num1<=num2);  //true
+	boolean ans=num2!=num3;
+	System.out.println(ans);  //false
+	ans=num2==num3;
+	System.out.println(ans); // true
+	
+	}
+
+}
+------------------------------------------------------------------------------
+Ternary operator
+
+public class Ternary {
+   public static void main(String[] args[]){
+   int num1=10;
+   int num2=20;
+   int max=(num1>num2)?num1:num2;
+   System.out.println(max);
+
+  }
+ }
+
+  (condition):true:false;
+   
+------------------------------
+Q What do you think about the assocativity of =.
+A is it left to right or right to left
+
+   int num=10;
+
+ Do we say num is assigned a value as 10?
+ or we say 10 is assigned a value num
+
+-----------------------------------
+public class VariableDemo6 {
+
+	public static void main(String[] args) {
+		/*
+		 * double d=12.35; int num=d; //Type mismatch: cannot convert from double to int
+		 */		
+		
+		int num=10;
+		double d=num;
+
+	}
+
+}
+
+---------------------------------------------------------------------------
+
+public class VariableDemo7 {
+
+	public static void main(String[] args) {
+	int num1=1;
+	float f=1.2f;
+	double d=2.3;
+	double d2=num1+f+d;
+	// in the above line 8 , datatype of d is the largest which is of
+	// type double so in that case automatically the datatype of num1 and
+	// f gets converted into double
+	
+	}
+
+}
+-----------------------------------------------------------------
+boolean data type cannot be converted to any other datatype similarly other data types also cannot be converted
+into boolean.
+
+
+public class DiscountPercentage {
+	public static void main(String[] args) {
+		int discountPercentage = 10;
+		double totalPrice = 200;
+		double priceAfterDiscount = totalPrice * (1 - ((double)discountPercentage / 100));
+		System.out.println("Customer has paid a bill of amount: "+ priceAfterDiscount);
+	}
+
+}
+--------------------------------------------------------------------------------------------------------------
+Condition check
+if
+switch
+
+Iterations
+while
+do while
+for
