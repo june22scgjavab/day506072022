@@ -1,0 +1,47 @@
+int num1=10;
+int num2=20;
+int num3=5;
+
+
+  num1>num2 && num1>num3
+   false         true  ============> false
+  num1<num2 && num1>num2
+   true          true  ============> true
+  num1>num2 || num1>num3
+   false           true============> true
+
+
+boolean b=true;
+
+boolean b1=!b; 
+
+display b1===> false
+
+boolean b=false;
+boolean b2=!b;
+
+display b2===> true
+
+ ---------------------------------------------------------------------------------------------------------- 
+ 
+  reply="yes"
+  
+  while ( reply == "yes") do
+   display "Hello World"
+   display "Do you want to continue?
+    input reply
+  end-while
+     
+1) Initialisation counter=1  ( Occurs once ----> first time)
+2) condition check ( counter<11)
+3) Re-initialisation  counter=counter+1 ( Multiple times -----> second time onwards till the
+                                          condition is met)
+
+---------------------------------------------------------------------------------------------------------------
+for ( counter=1,counter<11,counter=counter+1) do
+    display "Hello world"
+end-for
+-------------------------------------------------------------------------------------------------------------
+
+
+
