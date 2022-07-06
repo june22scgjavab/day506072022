@@ -38,10 +38,151 @@ display b2===> true
                                           condition is met)
 
 ---------------------------------------------------------------------------------------------------------------
-for ( counter=1,counter<11,counter=counter+1) do
+for (counter=1,counter<11,counter=counter+1) do
     display "Hello world"
 end-for
+
+The steps of for loop execution are as follows:
+
+1)Execute "initialization". This is executed only once, at the beginning of the for loop.
+counter=1
+
+2)Check the "condition".
+counter<11
+
+3)aIf the condition is false, stop the execution of for loop.
+
+3)bIf the condition is true, execute the "statements" written inside for and end-for.
+display "Hello world"
+
+4)Execute "increment_or_decrement_step".
+counter=counter+1
+
+
+Repeat from step 2.
 -------------------------------------------------------------------------------------------------------------
+input Counter
+while(Counter<5) do
+  Counter=Counter+1
+  display Counter
+end-while
+
+Counter=1
+display 2
+Counter=2
+display 3
+Counter=3
+display 4
+Counter 4
+display 5
+
+---------------------------------------------------------------------------------------------------------------
+
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+------------------------------------------------------------------------------------------------------
+class-> keyword to define a class
+Welcome-> Welcome is a class name and this class is user defined. In place of Welcome we can have any
+          other names like Hello,Hi,Student,Employee.
+public-> keyword which is an access specifier/modifier and decides whether the method or member variable
+         is accessible outside the class. Here public with the method main means main is accessible
+         outside the class Welcome.
+static-> keyword
+void  -> keyword , return type of a method. Writing void means method is not returning any value.
+main  -> method and which is entry point of the Java code.
+String-> A predefined class which is part of Java API(Application Programming Interface)/library
+[]-> Array . In this case it is an array of String.
+args-> Is the name of the array 
+String[] args-> Command line argument
+System-> Predefined class just like String
+println()-> It is a predefined method like printf method in C.
+System.out.println()-> This will be used to print anything on the console/output device/monitor
+Hello World! Welcome to Java Programming!-> This is a string which we want to
+                                            get displayed.
+;-> Every executable line should end up with ;.
+{}-> second bracket which signifies a block. So class is written as a block
+     and similary the method.
+-----------------------------------------------------------------------------------------------------------
+Hello.java
+
+  class Hello{
+  public static void main(String[] args){
+        System.out.println("Hello world");
+    }
+  }
+
+
+----------------------------------------------------------------------------------------------------------
+Q. How to see which version of Java is installed in my system?
+A. java -version
+
+*Some of the team members have in their local system. java 8 or after that.
+
+*The team members who are using vlabs, it is already installed with version 11.
+
+*Some of the team members no access to vlabs and want to install
+https://www.oracle.com/java/technologies/downloads/#java17
+
+-----------------------------------------------------------------------------------------------------------
+* Create a folder in a suitable drive. Within that save ur java files.
+* javac Hello.java ( javac is used for compiling the code)
+  javac <filename>
+  Hello.class ( the code in the form of bytecode) 
+  java <classname>
+  java Hello  (java is the java interpreter to execute/run your java code)
+------------------------------------------------------------------------------------------------------------
+JAVA AS A LANGUAGE IS CASE SENSITIVE. So uppercase and lowercase
+are not same.
+-------------------------------------------------------------------------------------------
+So working with command line can be somewhat tediou and error prone4
+For that we are going to use the IDE(Integrated Develpoment Environment)
+Eclipse/STS(Spring Tool Suite).
+
+https://spring.io/tools
+
+If we are using IDE 
+1) First download
+2) It will be downloaded as executable file.
+3) Double click the executable file.
+4) It will create a folder with the name like eclipse or STS.
+5) Just go to the bin folder.
+6) You will get the application icon either for eclipse or STS.
+7) If the desktop shortcut is not created , create a desktop shortcut. 
+
+
+8) Double click on the shortcut on the desktop and open the IDE(eclipse/STS).
+9) Select the default workspace ( which by default is display in the textbox)
+b) You can create your own workspace in the drive of your choice and with workspace/folder name.
+10) You get a welcome screen. Close the welcome screen.
+11) You will be able to see package explorer which shows all the projects created in the current
+    workspace.
+12) File--->New----Java Project
+13) Create a Java project dialog box will open.
+14) Give the project name and click finish.
+13) Create module info dialog box (just select dont create)
+14) We can see the folder created in package explorer and this is our project.
+15) We create a java file within the project folder.
+16) Right click on the project---->New----Class
+17) We get a dialog box for creating a project.
+18) package name is shown as same as project name. If you dont want to have package. Delete the 
+package name in the text box.
+19) Provide the class name.
+20) Select the main method related checkbox.
+21) Click the finish button.
+22) Save the code with ctrl+s
+23) Click on a green button at the top to execute your code.
+or
+Right click on the code editor====>Run as=====> Java application
+
+
+
+
+
+
+
 
 
 
