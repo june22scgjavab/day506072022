@@ -178,11 +178,160 @@ or
 Right click on the code editor====>Run as=====> Java application
 
 
+----------------------------------
+class Tester {
+	public static void main(String[] args) {
+		System.out.println("My name is Maria Jerome");
+	    System.out.println("My designation is System Engineer");
+	}
+}
+
+
+class Tester {
+	public static void main(String[] args) {
+		System.out.println("My name is Maria Jerome\nMy designation is System Engineer");
+	   
+	}
+}
+
+
+class Demo {
+    public static void main(String args[]){
+    System.out.print("Hello");
+    System.out.print("World");
+   }
+ }
+  HelloWorld
+
+------------------------------------------
+Whenever we write a class it should start with uppercase character:-
+Welcome
+System
+String
+
+
+The keywords are written in smallcase:-
+class,void,public,int,static
+
+
+methods and variables are written in smallcase.
+
+
+
+If the class name consists of multiple words , every first character of the words starts in uppercase.
+HelloWorld
+StringBuilder
+
+if the method names and variable names are of multiple words, second word onwards, first character is in
+uppercase.
+
+ displayData()
+ studentResultDetails()
+
+  int basic;
+  int employeeBasic;
+
+--------------------------------------------------------------------------------------------------------
+
+public class VariableDemo1 {
+
+	public static void main(String[] args) {
+		
+		int roll=1;   // roll is a variable and the datatype of roll is int
+		String name="Rahul";  //String is a type which is used to store a group of characters(string)
+		int marks=78;       // = is the assignment operator here the value 78 is assigned marks
+		System.out.println(roll);
+		System.out.println(name);
+		System.out.println(marks);
+
+	}
+
+}
+
+
+
+public class VariableDemo2 {
+
+	public static void main(String[] args) {
+		
+		int roll=1; 
+                System.out.println(roll);  // 1
+                roll=10;
+                System.out.println(roll);   //10
+
+	}
+
+}
+
+--------------------------
+int 2num;  // incorrect as it is starting with digit.
+int void; // incorrect because void is a keyword
+int voidnum; // this we can have
+int data value; // because we have a space in between
+int data%data; // We cannot have any other special characters _ (underscore) and $(dollar)
+int num$data; // Correct
+int num_data; // Correct
+
+
+   int num=10;
+   System.out.println(num); 
+   System.out.println(Num); // compilation error because java is case sensitive
+---------------------------------------------------- 
+int _data; // Correct
+
+int -data; // We cannot use - 
+------------------------------------------------------------------------------------------
+2 Datatypes
+a) Primitive- char,byte,short,int,long,float,double,boolean
+   int num=10;
+b) Non-primitive/Reference Datatype  String
+   String name="Ravi";
 
 
 
 
+public class VariableDemo2 {
+
+	public static void main(String[] args) {
+// 10.454545345325236
+    double d=10.4545453453252355356778267;
+    System.out.println(d);
+   // float f=12.6868564576; // float value should be suffixed by f or F
+    //Type mismatch: cannot convert from double to float
+    float var=12.6868564576F; 
+    System.out.println(var);
+	
+	}
+
+}
+-----------------------------------------------------------------------------------------------------
+
+class Demo {
+	public static void main(String[] args) {
+		int quantity;  // declaration and no initialisation
+		float totalCost = 10 * quantity; // error on this line
+		System.out.println(totalCost);
+	}
+}
+// The compilation error in above code because quantity is not intialised before use.
+// The variables declared locally should be initialised before use.
+
+class Demo {
+	public static void main(String[] args) {
+		int quantity=1;  // declaration and initialisation
+		float totalCost = 10 * quantity; 
+		System.out.println(totalCost);
+	}
+}
 
 
 
-
+class Demo {
+	public static void main(String[] args) {
+		int quantity;  //declaration
+                quantity=1;   // intialisation
+		float totalCost = 10 * quantity; 
+		System.out.println(totalCost);
+	}
+}
+---------------------------------------------------------------------------------------------------------
